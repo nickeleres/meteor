@@ -1,0 +1,16 @@
+
+
+<template name="speakers">
+	<h1>speakers</h1>
+
+	<h2>add</h2>
+		{{> quickForm collection="Speakers" id="insertUserForm" type="insert"}}
+
+	<ul>
+		{{#each speakers}}
+			<li><b>{{first}} {{last}} @</b> {{date}}&nbsp;<div class="btn btn-xs btn-danger" id="delete">x</div><div class='btn btn-xs' id='edit'><a class='button-text' href="{{pathFor 'speaker'}}">edit</a></div></li> 
+			
+		{{/each}}
+	</ul>
+
+</template>

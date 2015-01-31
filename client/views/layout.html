@@ -1,0 +1,17 @@
+
+<body>
+	{{renderPage}}
+</body>
+
+<template name='layout'>
+
+	{{> loginButtons}}
+
+	<div class="navbar">
+		<div class='btn' id='left'><a class='button-text' href="{{pathFor 'home'}}">home</a></div>
+		<div class='btn' id='right'><a class='button-text' href="{{pathFor 'speakers'}}">speakers</a></div>
+	</div>
+
+	{{> yield}}
+
+</template>

@@ -1,0 +1,22 @@
+/* CSS declarations go here */
+
+#insertUserForm, #updateSpeakersForm, #clear-people,h1, .single-speaker-info{
+	margin-left: 1em;
+}
+
+h2{
+	margin-left: 2em;
+}
+
+#left{
+	margin-left: 4em;
+}
+
+#left, #right{
+	margin: 1em;
+	margin-bottom: -0.5em;
+}
+
+.button-text{
+	color: inherit;
+}

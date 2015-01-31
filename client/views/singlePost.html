@@ -1,0 +1,9 @@
+
+
+<template name='speaker'>
+	<h1>single speaker info</h1>
+		<p class='single-speaker-info'><b><a>{{first}}</a> {{last}} @</b> {{date}}</p>
+
+		{{> quickForm collection="Speakers" doc=editingDoc id = 'updateSpeakersForm' type='update'}}
+
+</template>
