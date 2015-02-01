@@ -18,7 +18,7 @@ Template.speakers.events({
 	},
 
 	'click .edit': function(ev, speaker){
-		Session.set('selectedDocId', this._id);
+		console.log(this._id);
 	}
 });
 
