@@ -12,13 +12,13 @@ Template.speakers.helpers({
 });
 
 Template.speakers.events({
-	'click #clear-people': function(){
-		Session.set('selectedDocId', null);
-	},
 
 	'click #delete': function(ev, speaker){
-		var id = Session.get('selectedDocId');
 		Speakers.remove(this._id);
+	},
+
+	'click .edit': function(ev, speaker){
+		Session.set('selectedDocId', this._id);
 	}
 });
 

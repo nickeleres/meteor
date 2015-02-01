@@ -8,8 +8,12 @@
 
 	<ul>
 		{{#each speakers}}
-			<li><b>{{first}} {{last}} @</b> {{date}}&nbsp;<div class="btn btn-xs btn-danger" id="delete">x</div><div class='btn btn-xs' id='edit'><a class='button-text' href="{{pathFor 'speaker'}}">edit</a></div></li> 
-			
+			<li><b>{{first}} {{last}} @</b> {{date}}&nbsp;
+				<div class="btn btn-xs btn-danger" id="delete">x</div>
+				<div class='btn btn-xs' id='edit'><a class='button-text' href="{{pathFor 'speaker'}}">edit</a>
+				</div>
+			</li> 
+
 		{{/each}}
 	</ul>
 
