@@ -25,9 +25,5 @@ Template.speaker.helpers({
 
 Template.speaker.events({
 
-	'click .single-speaker-info a': function(ev, speaker){
-		ev.preventDefault();
-		Session.set('selectedDocId', this._id);
-		console.log(this._id);
-	}
+
 })
