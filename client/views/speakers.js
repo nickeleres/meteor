@@ -7,7 +7,7 @@ Router.route('speakers',{
 
 Template.speakers.helpers({
 	speakers: function(){
-		return Speakers.find({});
+		return Speakers.find({userId: Meteor.userId()});
 	}
 });
 
