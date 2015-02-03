@@ -19,5 +19,12 @@ Speakers.attachSchema(new SimpleSchema({
 			type: Date,
 			label: 'date',
 			optional: true
+		}, 
+
+		userId: {
+			type: String,
+			autoValue: function(){
+				return Meteor.userId();
+			}
 		}
 }));

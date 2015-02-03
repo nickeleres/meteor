@@ -5,12 +5,18 @@
 
 <template name='layout'>
 
-	<!-- {{> loginButtons}} -->
+	<div class='nav-collapse collapse'>
+		<div class='navbar-inner'>
+			{{> loginButtons}}
+		</div>
+	</div>
 
 	<div class="navbar">
 		<div class='btn' id='left'><a class='button-text' href="{{pathFor 'home'}}">home</a></div>
 		<div class='btn' id='right'><a class='button-text' href="{{pathFor 'speakers'}}">speakers</a></div>
 	</div>
+
+	
 
 	{{> yield}}
 

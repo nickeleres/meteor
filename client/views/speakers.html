@@ -5,7 +5,6 @@
 
 	<h2>add</h2>
 		{{> quickForm collection="Speakers" id="insertUserForm" type="insert"}}
-
 	<ul>
 		{{#each speakers}}
 			<li><b>{{first}} {{last}} @</b> {{date}}&nbsp;
@@ -13,8 +12,6 @@
 				<div class='btn btn-xs' id='edit'><a class='button-text' href="{{pathFor 'speaker'}}">edit</a>
 				</div>
 			</li> 
-
 		{{/each}}
 	</ul>
-
 </template>

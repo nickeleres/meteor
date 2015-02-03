@@ -11,4 +11,6 @@ bootstrap
 iron:router
 aldeed:collection2
 aldeed:autoform
+accounts-password
 
+accounts-ui
