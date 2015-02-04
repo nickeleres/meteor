@@ -8,7 +8,6 @@ Router.route('speaker', {
 	},
 
 	onBeforeAction: function(){
-		console.log('speaker route has run');
 		Session.set('selectedDocId', this.params._id);
 		console.log(this.params._id);
 		this.next();

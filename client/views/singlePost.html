@@ -4,6 +4,6 @@
 	<h1>single speaker info</h1>
 		<p class='single-speaker-info'><b>{{first}} {{last}} @</b> {{date}}</p>
 
-		{{> quickForm collection="Speakers" doc=editingDoc id = 'updateSpeakersForm' type='update'}}
+		{{> quickForm collection="Speakers" doc=editingDoc id = 'updateSpeakersForm' type='update' omitFields = "userId"}}
 
 </template>
