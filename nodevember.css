@@ -1,6 +1,7 @@
 /* CSS declarations go here */
 
-#insertUserForm, #updateSpeakersForm, #clear-people,h1, .single-speaker-info{
+#insertUserForm, #updateSpeakersForm, #clear-people,h1, 
+.single-speaker-info, #more-details, #insertSpeakersForm, #insertDetailForm{
 	margin-left: 1em;
 }
 
@@ -21,11 +22,22 @@ h2, h3{
 	color: inherit;
 }
 
-.add-form{
+.add-form, .entry-list{
 	float: left;
 }
 
 .entry-list{
-	float: left;
 	margin: 3em 0 0 4em;
+}
+
+.single-details-form, .single-details-list{
+	float: left;
+}
+
+.single-details-list{
+	margin: 1em 0 0 6em;
+}
+
+.speakerIdField{
+	display: none;
 }

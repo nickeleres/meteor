@@ -14,7 +14,7 @@ singleDetails.attachSchema(new SimpleSchema({
 	number: {
 		type: Number,
 		label: 'number of attendees',
-		max: 200,
+		max: 2000,
 		optional: true
 	},
 
@@ -24,10 +24,7 @@ singleDetails.attachSchema(new SimpleSchema({
 	},
 
 	speakerId: {
-		type: String,
-		autoValue: function(){
-			return this.params._id;
-		}
+		type: String
 	}
 
 }));

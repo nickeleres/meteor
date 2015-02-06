@@ -17,12 +17,7 @@ Router.route('speaker', {
 Template.speaker.helpers({
 
 	editingDoc: function(){
-		return Speakers.findOne({_id: Session.get('selectedDocId')});
+		Speakers.findOne({_id: Session.get('selectedDocId')});
 	}
 
 });
-
-Template.speaker.events({
-
-
-})
