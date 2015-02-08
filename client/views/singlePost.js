@@ -25,7 +25,6 @@ Template.speaker.events({
 
 	'click .single-speaker-info': function(ev){
 		ev.preventDefault();
-		console.log('clicked');
 		Session.set('selectedDocId', this._id);
 	}
 });
