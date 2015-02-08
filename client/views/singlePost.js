@@ -17,7 +17,15 @@ Router.route('speaker', {
 Template.speaker.helpers({
 
 	editingDoc: function(){
-		Speakers.findOne({_id: Session.get('selectedDocId')});
+		return Speakers.findOne({_id: Session.get('selectedDocId')});
 	}
+});
 
+Template.speaker.events({
+
+	'click .single-speaker-info': function(ev){
+		ev.preventDefault();
+		console.log('clicked');
+		Session.set('selectedDocId', this._id);
+	}
 });

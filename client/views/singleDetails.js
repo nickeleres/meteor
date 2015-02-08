@@ -19,10 +19,19 @@ Template.singleDetails.events({
 		e.preventDefault();
 
 		var detail = {
+			location: $(e.target).find('[name = location]').val(),
+			number: $(e.target).find('[name = number]').val(),
 			occasion: $(e.target).find('[name = occasion]').val(),
 			speakerId: $(e.target).find('[name = speakerId]').val()
 		}
 
 		singleDetails.insert(detail);
+		console.log(detail.speakerId);
+	},
+
+	'click #delete': function(e){
+		e.preventDefault();
+
+		singleDetails.remove(this._id);
 	}
 });

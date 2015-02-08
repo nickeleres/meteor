@@ -35,7 +35,8 @@
 	<ul class='single-details-list'>
 		{{#each details}}
 			<li>
-				{{location}} {{number}} {{occasion}} {{speakerId}}
+				<b>Location:</b> {{location}} <b>Occasion:</b> {{occasion}} <b>Attendees:</b> {{number}} &nbsp;
+				<div class="btn btn-xs btn-danger" id="delete">x</div>
 			</li>
 		{{/each}}
 	</ul>

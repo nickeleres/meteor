@@ -17,8 +17,7 @@ Speakers.attachSchema(new SimpleSchema({
 
 		date: {
 			type: Date,
-			label: 'date',
-			optional: true
+			label: 'date'
 		}, 
 
 		userId: {

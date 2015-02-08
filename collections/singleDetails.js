@@ -7,15 +7,13 @@ singleDetails.attachSchema(new SimpleSchema({
 	location: {
 		type: String,
 		label: 'location',
-		max: 200,
-		optional: true
+		max: 200
 	},
 
 	number: {
 		type: Number,
 		label: 'number of attendees',
-		max: 2000,
-		optional: true
+		max: 2000
 	},
 
 	occasion: {
