@@ -41,3 +41,11 @@ h2, h3{
 .speakerIdField{
 	display: none;
 }
+
+.login-welcome{
+	text-align: center;
+}
+
+.layout-buttons{
+	margin: 2em 0 1em 2em;
+}
