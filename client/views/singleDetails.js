@@ -35,3 +35,4 @@ Template.singleDetails.events({
 		singleDetails.remove(this._id);
 	}
 });
+

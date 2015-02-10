@@ -23,5 +23,12 @@ Template.speakers.events({
 });
 
 
+var requireLogin = function(){
+	if(! Meteor.user()){
+		this.render('accessDenied');
+		this.stop();
+	}
+}
 
+Router.onBeforeAction(requireLogin, {only: 'speakers'})
 

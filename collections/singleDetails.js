@@ -26,4 +26,3 @@ singleDetails.attachSchema(new SimpleSchema({
 	}
 
 }));
-

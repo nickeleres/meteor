@@ -27,5 +27,3 @@ Speakers.attachSchema(new SimpleSchema({
 			}
 		}
 }));
-
-
