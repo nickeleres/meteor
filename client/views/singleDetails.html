@@ -1,4 +1,5 @@
 <template name='singleDetails'>
+<<<<<<< HEAD
   <h2>add details to {{name}}</h2>
   <div class="single-details-form">
     <form id="insertDetailForm" novalidate="novalidate">
@@ -22,12 +23,38 @@
           <input type="hidden" name="speakerId" required="" data-schema-key="speakerId" class="form-control" value='{{_id}}'>    
           <span class="help-block"></span>
         </div>    
+=======
+	<h2>add details to {{name}}</h2>
+	<div class="single-details-form">
+    <form id="insertDetailForm" novalidate="novalidate">
+        <div class="form-group">
+        	<label class="control-label" for="location">location</label>    
+        	<input type="text" name="location" data-schema-key="location" class="form-control">
+        	<span class="help-block"></span>
+      	</div>    
+        <div class="form-group">
+        	<label class="control-label" for="items">items</label>    
+        	<input type="text" name="items" data-schema-key="items" class="form-control">    
+        	<span class="help-block"></span>
+      	</div>    
+        <div class="form-group">
+    	    <label class="control-label" for="guests">who to invite</label>    
+    	    <input type="text" name="guests" required="" data-schema-key="guests" class="form-control">    
+    	    <span class="help-block"></span>
+      	</div>    
+        <div class="form-group speakerIdField">
+    	    <label class="control-label" for="speakerId">Speaker</label>    
+    	    <input type="hidden" name="speakerId" required="" data-schema-key="speakerId" class="form-control" value='{{_id}}'>    
+    	    <span class="help-block"></span>
+      	</div>    
+>>>>>>> a5a48e6e5a1353fdbd57bb70d242c756f75fa11d
         <div>
           <button type="submit" class="btn btn-primary">
           Submit
           </button>
         </div>
     </form>
+<<<<<<< HEAD
   </div>
 
   <ul class='single-details-list'>
@@ -38,4 +65,16 @@
       </li>
     {{/each}}
   </ul>
+=======
+	</div>
+
+	<ul class='single-details-list'>
+		{{#each details}}
+			<li>
+				<b><u>location:</u></b> {{location}} <b><u>items:</u></b> {{items}} <b><u>guests:</u></b> {{guests}} &nbsp;
+				<div class="btn btn-xs btn-danger" id="delete">x</div>
+			</li>
+		{{/each}}
+	</ul>
+>>>>>>> a5a48e6e5a1353fdbd57bb70d242c756f75fa11d
 </template>
