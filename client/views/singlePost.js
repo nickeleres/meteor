@@ -11,6 +11,11 @@ Router.route('speaker', {
 		Session.set('selectedDocId', this.params._id);
 		console.log(this.params._id);
 		this.next();
+	},
+	waitOn: function(){
+		return Meteor.subscribe('speakers', function(){
+			Speakers.findOne({_id: this.params._id})
+		});
 	}
 });
 

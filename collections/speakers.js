@@ -3,22 +3,15 @@
 Speakers = new Meteor.Collection('speakers');
 
 Speakers.attachSchema(new SimpleSchema({
-		first: {
+		title: {
 			type: String,
-			label: "first name",
-			max: 200
-		},
-
-		last: {
-			type: String,
-			label: "last name",
+			label: "list title",
 			max: 200
 		},
 
 		date: {
-			type: Date,
-			label: 'date'
-		}, 
+			type: Date
+		},
 
 		userId: {
 			type: String,

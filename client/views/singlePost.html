@@ -1,8 +1,9 @@
 
 
 <template name='speaker'>
-		<h1>single speaker info</h1>
-			<p class='single-speaker-info'><b>{{first}} {{last}} @</b> {{date}}</p>
+		<h2 class='single-speaker-info'>list title info</h2>
+			<p class='single-speaker-info'><b>{{title}}</b> @ {{date}}</p>
+
 			{{> quickForm collection="Speakers" doc=editingDoc id = 'updateSpeakersForm' type='update' omitFields = "userId"}}
 
 			<div class='btn' id='more-details'><a class='button-text' href="{{pathFor 'singleDetails'}}">add details</a></div>
