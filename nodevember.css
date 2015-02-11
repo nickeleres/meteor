@@ -38,7 +38,7 @@ h2, h3{
 	margin: 1em 0 0 6em;
 }
 
-.speakerIdField{
+.speakerIdField, .form-group-no-show{
 	display: none;
 }
 
@@ -48,4 +48,17 @@ h2, h3{
 
 .layout-buttons{
 	margin: 2em 0 1em 2em;
+}
+
+.add-form, #insertUserForm, .entry-list,
+ #more-details{
+	text-align: center;
+}
+
+.btn{
+	border-radius: 88px;
+}
+
+.list-list .single-list{
+	text-align: left;
 }

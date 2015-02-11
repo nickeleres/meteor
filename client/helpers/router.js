@@ -6,11 +6,9 @@ Router.configure({
 	
 });
 
-
 var requireLogin = function() {
   if (! Meteor.user()) {
-    this.render('accessDenied');
-    this.next();
+    this.render('home');
   } else {
     this.next();
   }
@@ -26,5 +24,4 @@ var signInRoute = function(){
 };
 
 Router.onBeforeAction(requireLogin, {except: 'home'});
-
-Router.onBeforeAction(signInRoute);
+Router.onBeforeAction(signInRoute, {only: 'home'});

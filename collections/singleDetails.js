@@ -5,20 +5,15 @@ singleDetails = new Meteor.Collection('singleDetails');
 singleDetails.attachSchema(new SimpleSchema({
 
 	location: {
-		type: String,
-		label: 'location',
-		max: 200
+		type: String
 	},
 
-	number: {
-		type: Number,
-		label: 'number of attendees',
-		max: 2000
+	items: {
+		type: String
 	},
 
-	occasion: {
-		type: String,
-		label: 'occasion for speech'
+	guests: {
+		type: String
 	},
 
 	speakerId: {

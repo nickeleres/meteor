@@ -1,15 +1,35 @@
 <template name="speakers">
 		<div class="add-form">
-			<h1>speakers</h1>
-			<h2>add</h2>
-				{{> quickForm collection="Speakers" id="insertUserForm" type="insert" omitFields=
-				"userId"}}
+			<h1>lists</h1>
+			<h3>create new lists below</h3>
+			<form id="insertUserForm" novalidate="novalidate">
+				<div class="form-group">
+			    	<label class="control-label" for="title">list title</label>    
+			    	<input type="text" name="title" required="" data-schema-key="title" maxlength="200" class="form-control">
+			    	<span class="help-block"></span>
+			  	</div>    
+			  	<div class="form-group-no-show">
+			    	<label class="control-label" for="date">Date</label>    
+			    	<input type="date" name="date" required="" data-schema-key="date" class="form-control">    
+			    	<span class="help-block"></span>
+			  	</div>    
+			    <div class="form-group-no-show">
+			    	<label class="control-label" for="userId">User</label>    
+			    	<input type="text" name="userId" required="" data-schema-key="userId" class="form-control">    
+			    	<span class="help-block"></span>
+			  	</div>    
+			    <div>
+			      <button type="submit" class="btn btn-primary">
+			      Submit
+			      </button>
+			    </div>
+			</form>
 		</div>
 		<div class="entry-list">
-			<h3>speakers you added</h3>
-			<ul>
+			<h3>your lists</h3>
+			<ul class='list-list'>
 				{{#each speakers}}
-					<li><b>{{first}} {{last}} @</b> {{date}}&nbsp;
+					<li class='single-list'><b>{{title}}</b> {{date}} &nbsp;
 						<div class="btn btn-xs btn-danger" id="delete">x</div>
 						<div class='btn btn-xs' id='edit'><a class='button-text' href="{{pathFor 'speaker'}}">edit</a>
 						</div>
@@ -18,3 +38,5 @@
 			</ul>
 		</div>
 </template>
+
+
