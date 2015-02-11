@@ -1,6 +1,6 @@
 
 <template name="home">
-
-	<h2 class='login-welcome'>sign in above to access your kaleo</h2>
-
+	{{#unless currentUser}}
+		<h2 class='login-welcome'>sign in above to access your kaleo</h2>
+	{{/unless}}
 </template>

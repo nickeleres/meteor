@@ -4,14 +4,15 @@
 </body>
 
 <template name='layout'>
-	
-	<div class="layout-buttons">
-			{{> loginButtons}}
-	</div>
+
+		<div class="layout-buttons">
+
+				{{> loginButtons}}
+		</div>
 
 	<div class="navbar">
 		<div class='btn' id='left'><a class='button-text' href="{{pathFor 'home'}}">home</a></div>
-		<div class='btn' id='right'><a class='button-text' href="{{pathFor 'speakers'}}">speakers</a></div>
+		<div class='btn' id='right'><a class='button-text' href="{{pathFor 'speakers'}}">myKaleo</a></div>
 	</div>
 
 	{{> yield}}

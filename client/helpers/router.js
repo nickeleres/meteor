@@ -10,9 +10,21 @@ Router.configure({
 var requireLogin = function() {
   if (! Meteor.user()) {
     this.render('accessDenied');
+    this.next();
   } else {
     this.next();
   }
 }
 
-Router.onBeforeAction(requireLogin, {only: 'speakers'});
+var signInRoute = function(){
+	if(!(Meteor.loggingIn() || Meteor.user())){
+		this.render('home');
+		this.next();
+	} else {
+		this.render('speakers');
+	}
+};
+
+Router.onBeforeAction(requireLogin, {except: 'home'});
+
+Router.onBeforeAction(signInRoute);
